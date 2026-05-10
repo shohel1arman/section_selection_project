@@ -79,7 +79,7 @@ const editSchema = z
       .array(
         z.object({
           courseCode: z.string(),
-          section: z.string().regex(/^[A-E]$/),
+          section: z.string().regex(/^[A-G]$/),
           labSubsection: z
             .string()
             .regex(/^[12]$/)

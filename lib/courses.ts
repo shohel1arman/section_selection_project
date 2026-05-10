@@ -17,7 +17,7 @@ export const COURSES: Course[] = [
   { code: "DS412", name: "DS412 Lab", type: "lab" },
 ];
 
-export const SECTIONS = ["A", "B", "C", "D", "E"] as const;
+export const SECTIONS = ["A", "B", "C", "D", "E", "F", "G"] as const;
 export const LAB_SUBSECTIONS = ["1", "2"] as const;
 
 export const THEORY_CAPACITY = 50;

@@ -54,7 +54,7 @@ export default function CourseSelector({
       </div>
 
       {course.type === "theory" ? (
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
           {SECTIONS.map((sec) => {
             const slot = slotMap.get(slotKey(course.code, sec, null));
             const taken = slot?.taken ?? 0;
@@ -87,7 +87,7 @@ export default function CourseSelector({
           })}
         </div>
       ) : (
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-5">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-4 lg:grid-cols-7">
           {SECTIONS.map((sec) => (
             <div key={sec} className="space-y-1">
               <div className="text-xs font-semibold text-slate-500">

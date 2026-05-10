@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { COURSES, isLab } from "./courses";
 
-const SECTION_RE = /^[A-E]$/;
+const SECTION_RE = /^[A-G]$/;
 const SUB_RE = /^[12]$/;
 
 export const submissionSchema = z
@@ -25,7 +25,7 @@ export const submissionSchema = z
       .array(
         z.object({
           courseCode: z.string(),
-          section: z.string().regex(SECTION_RE, "Section must be A-E"),
+          section: z.string().regex(SECTION_RE, "Section must be A-G"),
           labSubsection: z
             .string()
             .regex(SUB_RE, "Lab subsection must be 1 or 2")

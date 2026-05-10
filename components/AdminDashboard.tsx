@@ -138,7 +138,7 @@ export default function AdminDashboard() {
                 </span>
               </div>
               {course.type === "theory" ? (
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-4 gap-2 sm:grid-cols-7">
                   {SECTIONS.map((sec) => {
                     const c = lookupCount(course.code, sec, null);
                     return (
@@ -152,7 +152,7 @@ export default function AdminDashboard() {
                   })}
                 </div>
               ) : (
-                <div className="grid grid-cols-5 gap-2">
+                <div className="grid grid-cols-4 gap-2 sm:grid-cols-7">
                   {SECTIONS.map((sec) => (
                     <div key={sec} className="space-y-1">
                       {LAB_SUBSECTIONS.map((sub) => {
